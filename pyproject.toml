@@ -1,0 +1,54 @@
+[tool.poetry]
+name = "miar"
+version = "0.1.0"
+description = ""
+authors = ["figuetbe <benoit.figuet@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12"
+pandas = "^2.0.3"
+numpy = "^1.25.1"
+plotly = "^5.15.0"
+shapely = "^2.0.1"
+traffic = {git = "https://github.com/xoolive/traffic.git"}
+notebook = "^6.5.4"
+pandarallel = "^1.6.5"
+black = "^23.3.0"
+pytz = "^2023.3"
+prophet = "^1.1.4"
+mypy = "^1.4.1"
+scikit-learn = "^1.3.0"
+catboost = "^1.2"
+jupyter = "^1.0.0"
+geopy = "^2.4.1"
+wandb = "^0.16.4"
+tensorflow = "2.14"
+keras = "2.14"
+haversine = "^2.8.1"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.0.277"
+
+
+[tool.poetry.group.cm_cluster.dependencies]
+cm-jupyter-eg-kernel-wlm = "^3.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+
+[tool.ruff.lint]
+select = [
+  "E", "W",  # pycodestyle
+  "F",  # pyflakes
+  "I",  # isort
+  "NPY",  # numpy
+  # "PD",  # pandas
+  "DTZ", # flake8-datetimez
+  "RUF"
+]

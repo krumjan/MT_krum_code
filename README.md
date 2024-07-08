@@ -10,7 +10,7 @@ The code is organized into several Jupyter Notebooks, each corresponding to diff
 - Contains notebooks for data preprocessing, merging, and the creation of training, validation, and test sets.
 
 ### 02_model_training
-- Contains notebooks for model training.
+- Contains notebooks for model optimisation and training.
 
 ### 03_analysis
 - Contains  notebooks for analysing the performance of the trained models.
